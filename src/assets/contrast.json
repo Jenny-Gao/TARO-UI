@@ -1,0 +1,28 @@
+{
+    "code":0,
+    "msg":"success",
+    "data":{
+        "cardTitle":"小V脸，选什么？",
+        "jumpTitle":"权威对比 省时省心",
+        "detailPageTitle":"小V脸",
+        "itemIds":"160701,160601,160501,160702,110105,160505,160504,160503,160507",
+        "showItemIds":"160701,160601,160501",
+        "cardInfos":[
+            {
+                "itemId":160701,
+                "itemName":"V-LINE瓜子脸手术",
+                "attributeValues":["骨骼突出选V-LINE","轻度疼痛","6个月恢复","3w~10w元/次"]
+            },
+            {
+                "itemId":160601,
+                "itemName":"取颊脂垫瘦脸",
+                "attributeValues":["面颊肉多取颊脂垫","轻度疼痛","3~6个月恢复","1k~3w元/全脸"]
+            },
+            {
+                "itemId":160501,
+                "itemName":"硅胶垫下巴",
+                "attributeValues":["立体自然选假体","轻度疼痛","3~6个月恢复","3k~2w元/次"]
+            }
+            ]
+    }
+}

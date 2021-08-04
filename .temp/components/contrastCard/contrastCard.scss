@@ -1,0 +1,164 @@
+// @function upx($args) {
+//     @return $args/(1.5 * 414 / 375);
+// }
+// /Users/gaoyang25/lemon-smart-prg/src/assets/css/global.scss 适配定义
+.wrapper {
+    background-color: #f5f5f5;
+    padding-bottom: 30px;
+    width: 1242px;
+}
+.coreContanier {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 60px 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 54px;
+    .titleLeft {
+        font-family: PingFangSC-Medium;
+        font-size: 54px;
+        color: #222222;
+        letter-spacing: 0;
+        line-height: 54px;
+        margin-left: 15px;
+    }
+
+    .titleRight {
+        font-family: PingFangSC-Regular;
+        font-size: 36px;
+        color: #222222;
+        letter-spacing: 0;
+        line-height: 36px;
+        margin-right: 15px;
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border-top: 2px solid #222222;
+            border-right: 2px solid #222222;
+            transform: rotate(45deg);
+            margin-left: 9px;
+            margin-bottom: 1px;
+        }
+    }
+}
+
+.content {
+    width: calc(100% - #{48px});
+    height: 398px;
+    background: #FFFFFF;
+    border: 2px solid #EEEEEE;
+    box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 39px;
+    margin-top: 45px;
+    padding: 51px 24px 48px 24px;
+    .titleBg {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 95px;
+        padding: 0 30px;
+        background: url(../../assets/titleBg.png) no-repeat center / 100% 100%;
+        .titleTxt {
+            font-family: PingFangSC-Medium;
+            font-size: 45px;
+            color: #222222;
+            letter-spacing: 0;
+            text-align: center;
+            line-height: 45px;
+            width: 317px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+    .contentInfos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 165px;
+        margin-top: 45px;
+        margin-bottom: 57px;
+        .contentItem {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 33.33%;
+            height: 165px;
+            &:not(:last-child) {
+                border-right: 2px solid rgba(0,0,0,0.10) ;
+            }
+            .contentTop {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 42px;
+                width: 340px;
+                .contentTopTxt {
+                    text-align: center;
+                    font-family: PingFangSC-Medium;
+                    font-size: 42px;
+                    color: #1F1F1F;
+                    line-height: 42px;
+                    width: 340px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            }
+            .contentMiddle {
+                display: flex;
+                justify-content: center;
+                font-family: PingFangSC-Regular;
+                font-size: 33px;
+                color: #858585;
+                letter-spacing: 0;
+                width: 95%;
+                vertical-align: middle;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            .contentBottom {
+                font-family: PingFangSC-Regular;
+                font-size: 36px;
+                color: #1F1F1F;
+                letter-spacing: 0;
+                line-height: 36px;
+            }
+        }
+    }
+    .seeProContrast {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: PingFangSC-Regular;
+        font-size: 36px;
+        color: #222222;
+        letter-spacing: 0;
+        line-height: 36px;
+        height: 36px;
+        &::after {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 16px;
+            height: 16px;
+            border-top: 2px solid #222222;
+            border-right: 2px solid #222222;
+            transform: rotate(45deg);
+            margin-left: 9px;
+            margin-bottom: 1.5px;
+        }
+    }
+}

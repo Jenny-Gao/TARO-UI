@@ -1,0 +1,32 @@
+// iphone6plus三倍 -> iphone6二倍 像素转换
+@function upx($args) {
+    @return $args/(1.5 * 414 / 375);
+}
+
+// iphone6plus二倍 -> iphone6二倍 像素转换
+@function correctPx($args) {
+    @return $args/1.1;
+}
+
+@mixin square($width, $height: $width) {
+    height: $height;
+    width: $width;
+}
+
+
+// 适配iphone系列底部黑线
+@mixin isIphoneX() {
+    //iphoneX、iphoneXs iPhone11 Pro
+    @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3){
+        @content;
+    }
+    //iphoneXs Max
+    @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio:3) {
+        @content;
+    }
+    //iphoneXR iPhone11 iPhone11 Pro Max
+    @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio:2) {
+        @content;
+    }
+}
+

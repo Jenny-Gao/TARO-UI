@@ -1,0 +1,199 @@
+@import 'src/assets/css/variable.scss';
+
+// iphone6plus二倍 -> iphone6二倍 像素转换
+@function correctPx($args) {
+    @return $args/1.1;
+}
+
+@function upx($args) {
+    @return $args/(1.5 * 414 / 375);
+}
+
+.container {
+    font-size: 28px;
+    line-height: 28px;
+    color: $normalTextColor;
+}
+
+.separator {
+    height: 1px;
+    background-color: $separatorColor;
+    transform-origin: 0 0;
+    transform: scaleY(0.5);
+}
+
+body {
+    font-family: "PingFang SC", sans-serif;
+    color: $normalTextColor;
+    #app {
+        span, p {
+            user-select: auto;
+        }
+    }
+    .use-select {
+        user-select: auto;
+    }
+}
+
+.detail-card-title {
+    height: 58px;
+    line-height: 58px;
+    margin-bottom: 20px;
+    font-size: 38px;
+    color: $blackTextColor;
+}
+
+.image-default-placeholder {
+    background-image: url('https://lemon.cdn.bcebos.com/lemon-taro-c/image-bg.png');
+    background-size:100% 100%;
+}
+
+.banner-default-placeholder {
+    background-image: url('https://lemon.cdn.bcebos.com/lemon-taro-c/banner-default.jpg');
+    background-size:100% 100%;
+}
+
+.image-default-size {
+    width: 100%;
+    height: 100%;
+}
+.image-fix {
+    width: 100%
+}
+
+.thumb-com-wrapper {
+    min-height: 70px;
+}
+.info-com-wrapper {
+    min-height: 60px;
+}
+
+.single-line {
+    display: -webkit-box;
+    overflow: hidden;
+    /*! autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    word-break: break-all;
+}
+
+.cross-single-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.two-line {
+    display: -webkit-box;
+    /*! autoprefixer: off */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.three-line {
+    display: -webkit-box;
+    /*! autoprefixer: off */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.four-line {
+    display: -webkit-box;
+    /*! autoprefixer: off */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.image-cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    z-index: 1;
+}
+
+$highlightBgColor: #fff;
+
+$black-2: #222;
+$grey-3: #333;
+$grey-6: #666;
+$grey-9: #999;
+
+
+@mixin square($height, $width:$height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin circle($px) {
+    @include square($px);
+    border-radius: 50%;
+}
+
+@mixin n-ellipsis($n:2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /*! autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $n;
+    word-break: break-all;
+}
+
+.live-in-content-scrool-c {
+    position: fixed;
+    top: 30.1vh;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 888;
+    background: #F8F8F8;
+
+    border-top-left-radius: upx(50px);
+    border-top-right-radius: upx(50px);
+
+    transition: 0.3s;
+
+    &.hide {
+        top: 100vh;
+    }
+
+    &.show {
+        top: 30.1vh;
+    }
+
+    padding-top: upx(49px);
+}
+
+.live-in-content-fake-segment {
+    width: 100%;
+    height: upx(60px);
+    background: white;
+    position: fixed;
+    top: 30.1vh;
+    z-index: 890;
+    border-top-left-radius: upx(50px);
+    border-top-right-radius: upx(50px);
+
+    transition: 0.3s;
+
+    &.hide {
+        top: 100vh;
+    }
+
+    &.show {
+        top: 30.1vh;
+    }
+
+    pointer-events: none;
+}

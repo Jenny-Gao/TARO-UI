@@ -1,0 +1,21 @@
+@import 'src/assets/css/variable.scss';
+
+@import "@baidu/lemon-ui/dist/ui/style/base.scss";
+@import "@baidu/lemon-ui/dist/ui/components/star/index.scss";
+@import "@baidu/lemon-ui/dist/ui/components/recommendedHospitalCard/index.scss";
+@import "@baidu/lemon-ui/dist/ui/components/receivedAppointmentCard/index.scss";
+@import "@baidu/lemon-ui/dist/ui/components/popup/index.scss";
+@import "@baidu/lemon-ui/dist/ui/components/toast/index.scss";
+
+.received-appointment-card {
+    border-radius: upx(36px) upx(36px) 0 0;
+    .received-appointment-card-header {
+        .received-appointment-tip {
+            font-family: PingFangSC-Regular;
+            font-size: upx(42px);
+            line-height: upx(60px);
+            color: #585858;
+            text-align: center;
+        }
+    }
+}

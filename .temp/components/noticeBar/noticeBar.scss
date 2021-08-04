@@ -1,0 +1,27 @@
+.notice-bar-root-container {
+    background: rgba(0,0,0,0.40);
+    height: 72px;
+    // 未定义宽度，宽度同父盒子
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .notice-left-icon {
+        width: 37px;
+        min-width: 37px;
+        height: 30px;
+    }
+    .notice-txt-content {
+        display: inline-block;
+        margin-left: 15px;
+        white-space: nowrap; // 文字只在同一行上
+        text-overflow: ellipsis; // 文字溢出用省略号
+        overflow: hidden;
+        font-family: PingFangSC-Regular;
+        font-size: 24px;
+        color: #FFFFFF;
+        letter-spacing: 30px;
+    }
+}

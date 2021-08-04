@@ -1,0 +1,32 @@
+@import './../../assets/iconfont/iconfont.scss';
+
+.doctor-bar {
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 144px;
+        font-size: 45px;
+        border-top: 3px solid #e43b3b;
+    }
+    &-left {
+        display: flex;
+        align-items: center;
+    }
+    &-name {
+        color: #222222;
+        width: 175px;
+    }
+    &-desc {
+        color: #666666;
+    }
+    &-right-arrow {
+        width: 13px;
+        height: 23px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
